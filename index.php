@@ -14,16 +14,7 @@
     );
 
     $url_parts= explode("/", $_SERVER["REQUEST_URI"]);
-/*
-    $controller= $url_parts[3];
 
-    if(empty($controller)){
-        $controller= "home";
-    }
-
-    OU!!
-*/
-    //white list de controllers permitidos
     $controlers=[
         "home", "subcategories", "products", "productdetail", "cart", "checkout", "login", "register", "removeproduct", "changequantity"
     ];
